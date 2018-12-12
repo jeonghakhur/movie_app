@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import Movie from './Movie';
 import './App.css';
 
-const movie_title = ["Avengers", "Black Panther", "Deadpool 2", "Big Hero 6"]
-
-const movie_images = ["https://yts.am/assets/images/movies/avengers_infinity_war_2018/large-cover.jpg", "https://yts.am/assets/images/movies/black_panther_2018/large-cover.jpg", "https://yts.am/assets/images/movies/deadpool_2_2018/large-cover.jpg", "https://yts.am/assets/images/movies/big_hero_6_2014/large-cover.jpg"]
-
 const movies = [
   {
     title: "Avengers",
@@ -36,16 +32,20 @@ class App extends Component {
   // render
   // componentDidUpdate
 
-  componentWillMount() {
-    console.log('will mount')
+  state = {
+    greeting: 'Hello!'
   }
 
   componentDidMount() {
-    console.log('did mount')
+    setTimeout(() => {
+      // this.state.greeting = 'something';
+      this.setState({
+       greeting: 'Hello again!' 
+      })
+    }, 5000)
   }
-
   render() {
-    console.log('render')
+    console.log(this.state.greeting);
     return (
       <div className="App">
         {movies.map((movie, index) => 
