@@ -11,29 +11,10 @@ class App extends Component {
   state = {}
 
   componentDidMount() {
-    setTimeout(() => {
-      // this.state.greeting = 'something';
-      this.setState({
-        movies: [
-          {
-            title: "Thor: Ragnarok",
-            image: "https://yts.am/assets/images/movies/thor_ragnarok_2017/large-cover.jpg"
-          }, {
-            title: "Avengers",
-            image: "https://yts.am/assets/images/movies/avengers_infinity_war_2018/large-cover.jpg"
-          }, {
-            title: "Black Panther",
-            image: "https://yts.am/assets/images/movies/black_panther_2018/large-cover.jpg"
-          }, {
-            title: "Deadpool 2",
-            image: "https://yts.am/assets/images/movies/deadpool_2_2018/large-cover.jpg"
-          }, {
-            title: "Big Hero 6",
-            image: "https://yts.am/assets/images/movies/big_hero_6_2014/large-cover.jpg"
-          }
-        ]
-      })
-    }, 2000)
+   fetch('https://yts.am/api/v2/list_movies.json?sort_by=download_count')
+   .then(response => response.json())
+   .then(json => console.log(json))
+   .catch(err => console.log(err))
   }
 
   _renderMovies = () => {
