@@ -5132,9 +5132,10 @@ react-error-overlay@^2.0.1:
     settle-promise "1.0.0"
     source-map "0.5.6"
 
-react-lines-ellipsis@^0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/react-lines-ellipsis/-/react-lines-ellipsis-0.7.3.tgz#20dcbb40d2fab4b8a377f2a0f609b01d30b7bda6"
+react-lines-ellipsis@^0.13.2:
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/react-lines-ellipsis/-/react-lines-ellipsis-0.13.2.tgz#0d5726ab1f5e8107398262f5faf16e2e4de08951"
+  integrity sha512-4r4PdfR0l0KNbiIp9U6+9Yiap030brPdHuBECqseEfNMZpTsMQrTiqVxUnQ4fnUnv+xwzj1/pDuLSRmc37XSJA==
 
 react-scripts@1.0.13:
   version "1.0.13"
