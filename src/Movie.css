@@ -27,13 +27,13 @@
     font-weight: 600;
 }
 
-.Movie .Movie__Genres{
-    display: flex;
-    flex-wrap:wrap;
-    margin-bottom:20px;
+.Movie ul {
+    margin: 0;
+    padding: 0;
 }
-
-.Movie__Genres .Movie__Genre{
+.Movie li{
+    list-style: none;
+    float: left;
     margin-right:10px;
     color:#B4B5BD;
 }
